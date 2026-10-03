@@ -1,2 +1,511 @@
- 
-  notes.html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shiksha Live - Notes</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f4f7fb;
+  color:#222;
+}
+
+header{
+  background:#1565c0;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+}
+
+header h1{
+  margin:0 0 8px;
+}
+
+header p{
+  margin:0;
+}
+
+.container{
+  width:94%;
+  max-width:700px;
+  margin:20px auto;
+}
+
+/* Class */
+.class-box{
+  background:white;
+  margin-bottom:18px;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,.12);
+}
+
+.class-title{
+  background:#1565c0;
+  color:white;
+  padding:17px;
+  font-size:21px;
+  font-weight:bold;
+}
+
+/* Subject */
+.subject{
+  margin:12px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.subject button{
+  width:100%;
+  border:0;
+  background:#e3f2fd;
+  color:#0d47a1;
+  padding:16px;
+  text-align:left;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.subject button:hover{
+  background:#bbdefb;
+}
+
+/* Chapters */
+.chapters{
+  display:none;
+  background:#fafafa;
+  padding:10px;
+}
+
+.chapters a{
+  display:block;
+  text-decoration:none;
+  color:#222;
+  background:white;
+  padding:13px;
+  margin:7px 0;
+  border-radius:8px;
+  border:1px solid #ddd;
+}
+
+.chapters a:hover{
+  background:#e3f2fd;
+  color:#1565c0;
+}
+
+.back{
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  background:#424242;
+  color:white;
+  padding:14px;
+  border-radius:10px;
+  margin:25px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>📚 Shiksha Live</h1>
+  <p>कक्षा 9 से 12 तक Notes</p>
+</header>
+
+<div class="container">
+
+<!-- ================= कक्षा 9 ================= -->
+
+<div class="class-box">
+
+<div class="class-title">
+📘 कक्षा 9
+</div>
+
+<div class="subject">
+<button onclick="toggle('c9math')">🧮 Math ▼</button>
+
+<div class="chapters" id="c9math">
+
+<a href="#">Chapter 1 - Number Systems</a>
+<a href="#">Chapter 2 - Polynomials</a>
+<a href="#">Chapter 3 - Coordinate Geometry</a>
+<a href="#">Chapter 4 - Linear Equations in Two Variables</a>
+<a href="#">Chapter 5 - Introduction to Euclid's Geometry</a>
+<a href="#">Chapter 6 - Lines and Angles</a>
+<a href="#">Chapter 7 - Triangles</a>
+<a href="#">Chapter 8 - Quadrilaterals</a>
+<a href="#">Chapter 9 - Circles</a>
+<a href="#">Chapter 10 - Heron's Formula</a>
+<a href="#">Chapter 11 - Surface Areas and Volumes</a>
+<a href="#">Chapter 12 - Statistics</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c9chem')">🧪 Chemistry ▼</button>
+
+<div class="chapters" id="c9chem">
+
+<a href="#">Chapter 1 - Matter in Our Surroundings</a>
+<a href="#">Chapter 2 - Is Matter Around Us Pure</a>
+<a href="#">Chapter 3 - Atoms and Molecules</a>
+<a href="#">Chapter 4 - Structure of the Atom</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c9phy')">⚛️ Physics ▼</button>
+
+<div class="chapters" id="c9phy">
+
+<a href="#">Chapter 1 - Motion</a>
+<a href="#">Chapter 2 - Force and Laws of Motion</a>
+<a href="#">Chapter 3 - Gravitation</a>
+<a href="#">Chapter 4 - Work and Energy</a>
+<a href="#">Chapter 5 - Sound</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c9bio')">🧬 Biology ▼</button>
+
+<div class="chapters" id="c9bio">
+
+<a href="#">Chapter 1 - The Fundamental Unit of Life</a>
+<a href="#">Chapter 2 - Tissues</a>
+<a href="#">Chapter 3 - Diversity in Living Organisms</a>
+<a href="#">Chapter 4 - Why Do We Fall Ill</a>
+<a href="#">Chapter 5 - Natural Resources</a>
+<a href="#">Chapter 6 - Improvement in Food Resources</a>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- ================= कक्षा 10 ================= -->
+
+<div class="class-box">
+
+<div class="class-title">
+📗 कक्षा 10
+</div>
+
+<div class="subject">
+<button onclick="toggle('c10math')">🧮 Math ▼</button>
+
+<div class="chapters" id="c10math">
+
+<a href="#">Chapter 1 - Real Numbers</a>
+<a href="#">Chapter 2 - Polynomials</a>
+<a href="#">Chapter 3 - Pair of Linear Equations</a>
+<a href="#">Chapter 4 - Quadratic Equations</a>
+<a href="#">Chapter 5 - Arithmetic Progressions</a>
+<a href="#">Chapter 6 - Triangles</a>
+<a href="#">Chapter 7 - Coordinate Geometry</a>
+<a href="#">Chapter 8 - Introduction to Trigonometry</a>
+<a href="#">Chapter 9 - Applications of Trigonometry</a>
+<a href="#">Chapter 10 - Circles</a>
+<a href="#">Chapter 11 - Areas Related to Circles</a>
+<a href="#">Chapter 12 - Surface Areas and Volumes</a>
+<a href="#">Chapter 13 - Statistics</a>
+<a href="#">Chapter 14 - Probability</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c10chem')">🧪 Chemistry ▼</button>
+
+<div class="chapters" id="c10chem">
+
+<a href="#">Chapter 1 - Chemical Reactions and Equations</a>
+<a href="#">Chapter 2 - Acids, Bases and Salts</a>
+<a href="#">Chapter 3 - Metals and Non-metals</a>
+<a href="#">Chapter 4 - Carbon and Its Compounds</a>
+<a href="#">Chapter 5 - Periodic Classification of Elements</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c10phy')">⚛️ Physics ▼</button>
+
+<div class="chapters" id="c10phy">
+
+<a href="#">Chapter 1 - Light: Reflection and Refraction</a>
+<a href="#">Chapter 2 - Human Eye and Colourful World</a>
+<a href="#">Chapter 3 - Electricity</a>
+<a href="#">Chapter 4 - Magnetic Effects of Electric Current</a>
+<a href="#">Chapter 5 - Sources of Energy</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c10bio')">🧬 Biology ▼</button>
+
+<div class="chapters" id="c10bio">
+
+<a href="#">Chapter 1 - Life Processes</a>
+<a href="#">Chapter 2 - Control and Coordination</a>
+<a href="#">Chapter 3 - How Do Organisms Reproduce</a>
+<a href="#">Chapter 4 - Heredity</a>
+<a href="#">Chapter 5 - Our Environment</a>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- ================= कक्षा 11 ================= -->
+
+<div class="class-box">
+
+<div class="class-title">
+📕 कक्षा 11
+</div>
+
+<div class="subject">
+<button onclick="toggle('c11math')">🧮 Math ▼</button>
+
+<div class="chapters" id="c11math">
+
+<a href="#">Chapter 1 - Sets</a>
+<a href="#">Chapter 2 - Relations and Functions</a>
+<a href="#">Chapter 3 - Trigonometric Functions</a>
+<a href="#">Chapter 4 - Principle of Mathematical Induction</a>
+<a href="#">Chapter 5 - Complex Numbers</a>
+<a href="#">Chapter 6 - Linear Inequalities</a>
+<a href="#">Chapter 7 - Permutations and Combinations</a>
+<a href="#">Chapter 8 - Binomial Theorem</a>
+<a href="#">Chapter 9 - Sequences and Series</a>
+<a href="#">Chapter 10 - Straight Lines</a>
+<a href="#">Chapter 11 - Conic Sections</a>
+<a href="#">Chapter 12 - Introduction to Three Dimensional Geometry</a>
+<a href="#">Chapter 13 - Limits and Derivatives</a>
+<a href="#">Chapter 14 - Statistics</a>
+<a href="#">Chapter 15 - Probability</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c11chem')">🧪 Chemistry ▼</button>
+
+<div class="chapters" id="c11chem">
+
+<a href="#">Chapter 1 - Some Basic Concepts of Chemistry</a>
+<a href="#">Chapter 2 - Structure of Atom</a>
+<a href="#">Chapter 3 - Classification of Elements</a>
+<a href="#">Chapter 4 - Chemical Bonding</a>
+<a href="#">Chapter 5 - Thermodynamics</a>
+<a href="#">Chapter 6 - Equilibrium</a>
+<a href="#">Chapter 7 - Redox Reactions</a>
+<a href="#">Chapter 8 - Organic Chemistry</a>
+<a href="#">Chapter 9 - Hydrocarbons</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c11phy')">⚛️ Physics ▼</button>
+
+<div class="chapters" id="c11phy">
+
+<a href="#">Chapter 1 - Units and Measurements</a>
+<a href="#">Chapter 2 - Motion in a Straight Line</a>
+<a href="#">Chapter 3 - Motion in a Plane</a>
+<a href="#">Chapter 4 - Laws of Motion</a>
+<a href="#">Chapter 5 - Work, Energy and Power</a>
+<a href="#">Chapter 6 - System of Particles</a>
+<a href="#">Chapter 7 - Gravitation</a>
+<a href="#">Chapter 8 - Mechanical Properties of Matter</a>
+<a href="#">Chapter 9 - Thermodynamics</a>
+<a href="#">Chapter 10 - Kinetic Theory</a>
+<a href="#">Chapter 11 - Oscillations</a>
+<a href="#">Chapter 12 - Waves</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c11bio')">🧬 Biology ▼</button>
+
+<div class="chapters" id="c11bio">
+
+<a href="#">Chapter 1 - The Living World</a>
+<a href="#">Chapter 2 - Biological Classification</a>
+<a href="#">Chapter 3 - Plant Kingdom</a>
+<a href="#">Chapter 4 - Animal Kingdom</a>
+<a href="#">Chapter 5 - Morphology of Flowering Plants</a>
+<a href="#">Chapter 6 - Anatomy of Flowering Plants</a>
+<a href="#">Chapter 7 - Structural Organisation in Animals</a>
+<a href="#">Chapter 8 - Cell Structure and Functions</a>
+<a href="#">Chapter 9 - Biomolecules</a>
+<a href="#">Chapter 10 - Cell Cycle and Cell Division</a>
+<a href="#">Chapter 11 - Photosynthesis</a>
+<a href="#">Chapter 12 - Respiration in Plants</a>
+<a href="#">Chapter 13 - Plant Growth</a>
+<a href="#">Chapter 14 - Breathing and Exchange of Gases</a>
+<a href="#">Chapter 15 - Body Fluids and Circulation</a>
+<a href="#">Chapter 16 - Excretory Products</a>
+<a href="#">Chapter 17 - Locomotion and Movement</a>
+<a href="#">Chapter 18 - Neural Control</a>
+<a href="#">Chapter 19 - Chemical Coordination</a>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- ================= कक्षा 12 ================= -->
+
+<div class="class-box">
+
+<div class="class-title">
+📙 कक्षा 12
+</div>
+
+<div class="subject">
+<button onclick="toggle('c12math')">🧮 Math ▼</button>
+
+<div class="chapters" id="c12math">
+
+<a href="#">Chapter 1 - Relations and Functions</a>
+<a href="#">Chapter 2 - Inverse Trigonometric Functions</a>
+<a href="#">Chapter 3 - Matrices</a>
+<a href="#">Chapter 4 - Determinants</a>
+<a href="#">Chapter 5 - Continuity and Differentiability</a>
+<a href="#">Chapter 6 - Applications of Derivatives</a>
+<a href="#">Chapter 7 - Integrals</a>
+<a href="#">Chapter 8 - Applications of Integrals</a>
+<a href="#">Chapter 9 - Differential Equations</a>
+<a href="#">Chapter 10 - Vector Algebra</a>
+<a href="#">Chapter 11 - Three Dimensional Geometry</a>
+<a href="#">Chapter 12 - Linear Programming</a>
+<a href="#">Chapter 13 - Probability</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c12chem')">🧪 Chemistry ▼</button>
+
+<div class="chapters" id="c12chem">
+
+<a href="#">Chapter 1 - Solutions</a>
+<a href="#">Chapter 2 - Electrochemistry</a>
+<a href="#">Chapter 3 - Chemical Kinetics</a>
+<a href="#">Chapter 4 - d and f Block Elements</a>
+<a href="#">Chapter 5 - Coordination Compounds</a>
+<a href="#">Chapter 6 - Haloalkanes and Haloarenes</a>
+<a href="#">Chapter 7 - Alcohols, Phenols and Ethers</a>
+<a href="#">Chapter 8 - Aldehydes, Ketones and Carboxylic Acids</a>
+<a href="#">Chapter 9 - Amines</a>
+<a href="#">Chapter 10 - Biomolecules</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c12phy')">⚛️ Physics ▼</button>
+
+<div class="chapters" id="c12phy">
+
+<a href="#">Chapter 1 - Electric Charges and Fields</a>
+<a href="#">Chapter 2 - Electrostatic Potential</a>
+<a href="#">Chapter 3 - Current Electricity</a>
+<a href="#">Chapter 4 - Moving Charges and Magnetism</a>
+<a href="#">Chapter 5 - Magnetism and Matter</a>
+<a href="#">Chapter 6 - Electromagnetic Induction</a>
+<a href="#">Chapter 7 - Alternating Current</a>
+<a href="#">Chapter 8 - Electromagnetic Waves</a>
+<a href="#">Chapter 9 - Ray Optics</a>
+<a href="#">Chapter 10 - Wave Optics</a>
+<a href="#">Chapter 11 - Dual Nature of Radiation</a>
+<a href="#">Chapter 12 - Atoms</a>
+<a href="#">Chapter 13 - Nuclei</a>
+<a href="#">Chapter 14 - Semiconductor Electronics</a>
+
+</div>
+</div>
+
+
+<div class="subject">
+<button onclick="toggle('c12bio')">🧬 Biology ▼</button>
+
+<div class="chapters" id="c12bio">
+
+<a href="#">Chapter 1 - Reproduction</a>
+<a href="#">Chapter 2 - Sexual Reproduction in Flowering Plants</a>
+<a href="#">Chapter 3 - Human Reproduction</a>
+<a href="#">Chapter 4 - Reproductive Health</a>
+<a href="#">Chapter 5 - Principles of Inheritance</a>
+<a href="#">Chapter 6 - Molecular Basis of Inheritance</a>
+<a href="#">Chapter 7 - Evolution</a>
+<a href="#">Chapter 8 - Human Health and Disease</a>
+<a href="#">Chapter 9 - Biotechnology</a>
+<a href="#">Chapter 10 - Ecology</a>
+
+</div>
+</div>
+
+</div>
+
+
+<a class="back" href="index.html">
+⬅️ वापस Home पर जाएँ
+</a>
+
+</div>
+
+
+<script>
+
+function toggle(id){
+
+  const box = document.getElementById(id);
+
+  if(box.style.display === "block"){
+    box.style.display = "none";
+  }
+  else{
+    box.style.display = "block";
+  }
+
+}
+
+</script>
+
+</body>
+</html>
