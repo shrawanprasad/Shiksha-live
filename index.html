@@ -1,53 +1,125 @@
- <a 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiksha Live</title>
 
 <style>
-body{
+*{
+  box-sizing:border-box;
   margin:0;
-  font-family:Arial,sans-serif;
-  background:#f4f7fb;
-  text-align:center;
+  padding:0;
 }
+
+body{
+  font-family:Arial,sans-serif;
+  background:#f5f7fb;
+}
+
 header{
   background:#1565c0;
   color:white;
-  padding:25px 10px;
+  padding:18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
-h1{margin:0;}
-.container{
-  padding:25px 15px;
+
+.logo{
+  font-size:24px;
+  font-weight:bold;
 }
-button{
-  display:block;
-  width:90%;
-  max-width:400px;
-  margin:15px auto;
-  padding:16px;
-  border:0;
-  border-radius:10px;
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:15px;
+}
+
+.hero{
+  background:linear-gradient(135deg,#1565c0,#42a5f5);
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+.hero h1{
+  font-size:36px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:18px;
+  margin-bottom:25px;
+}
+
+.btn{
+  background:white;
+  color:#1565c0;
+  padding:13px 25px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.section{
+  padding:40px 6%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 3px 12px #ddd;
+}
+
+.card h3{
+  color:#1565c0;
+  margin-bottom:10px;
+}
+
+.card button{
   background:#1565c0;
   color:white;
-  font-size:18px;
+  border:0;
+  padding:10px 20px;
+  border-radius:6px;
 }
-button:active{
-  background:#0d47a1;
+
+@media(max-width:700px){
+  nav{
+    display:none;
+  }
+
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .hero h1{
+    font-size:28px;
+  }
+}
+
+@media(max-width:450px){
+  .cards{
+    grid-template-columns:1fr;
+  }
 }
 </style>
 </head>
-
-<body>
-
-<header>
-  <h1>Shiksha Live</h1>
-  <p>आपका ऑनलाइन शिक्षा प्लेटफॉर्म</p>
-</header>
-
-<div class="container">
-
-<button>📚 कक्षा 11</button>
-<button>🧪 Chemistry</button>
-<button>📖 Physics</button>
-<button>🧮 Mathematics</button>
-<button>📝 Quiz</button>
 ><a href="https://meet.google.com/dfi-nfks-fkb" target="_blank">
   <button>🎥 Live Class</button>
 </a>
