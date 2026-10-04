@@ -195,3 +195,203 @@ nav a{
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shiksha Live</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#f5f7fb;
+}
+
+header{
+  background:#1565c0;
+  color:white;
+  padding:18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bold;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:15px;
+}
+
+.hero{
+  background:linear-gradient(135deg,#1565c0,#42a5f5);
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+.hero h1{
+  font-size:36px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:18px;
+  margin-bottom:25px;
+}
+
+.btn{
+  background:white;
+  color:#1565c0;
+  padding:13px 25px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.section{
+  padding:40px 6%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 3px 12px #ddd;
+}
+
+.card h3{
+  color:#1565c0;
+  margin-bottom:10px;
+}
+
+.card button{
+  background:#1565c0;
+  color:white;
+  border:0;
+  padding:10px 20px;
+  border-radius:6px;
+}
+
+@media(max-width:700px){
+  nav{
+    display:none;
+  }
+
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .hero h1{
+    font-size:28px;
+  }
+}
+
+@media(max-width:450px){
+  .cards{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Shiksha Live</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="notes.html">Notes</a>
+    <a href="#">Live Class</a>
+    <a href="#">Courses</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Shiksha Live में आपका स्वागत है</h1>
+  <p>Class 9 से 12 तक पढ़ाई एक ही जगह</p>
+
+  <a href="notes.html" class="btn">
+    Notes देखें
+  </a>
+</section>
+
+<section class="section">
+
+  <h2 class="section-title">
+    हमारी सुविधाएँ
+  </h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>📚 Notes</h3>
+      <p>Class 9–12 के सभी विषयों के Notes</p>
+      <br>
+      <button onclick="location.href='notes.html'">
+        Notes खोलें
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>🎥 Live Class</h3>
+      <p>Online Live Class में पढ़ाई करें</p>
+      <br>
+      <button onclick="alert('Live Class जल्द शुरू होगी')">
+        Class देखें
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>📝 Test</h3>
+      <p>अपनी तैयारी का Online Test दें</p>
+      <br>
+      <button onclick="alert('Test Section जल्द आएगा')">
+        Test दें
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>🎓 Courses</h3>
+      <p>अपने Class के Courses देखें</p>
+      <br>
+      <button onclick="alert('Courses Section जल्द आएगा')">
+        Courses देखें
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<footer style="background:#1565c0;color:white;text-align:center;padding:20px;">
+  © 2026 Shiksha Live
+</footer>
+
+</body>
+</html>
